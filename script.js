@@ -161,10 +161,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // 🔥 Load saved image
   const savedImage = localStorage.getItem("profileImage");
   if (savedImage) {
-    preview.src = savedImage;
-    preview.style.display = "block";
-    text.style.display = "none";
-  }
+  preview.src = savedImage;
+  preview.style.display = "block";
+  text.style.display = "none";
+} else {
+  // 👇 fallback to default image
+  preview.src = "Spideyy.jpg";
+  preview.style.display = "block";
+}
 
   // 🔥 Handle upload
   input.addEventListener("change", function () {
