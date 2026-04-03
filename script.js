@@ -153,6 +153,9 @@ input.addEventListener("change", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  if (preview.src && preview.src !== "") {
+  text.style.display = "none";
+}
 
   const input = document.getElementById("photoInput");
   const preview = document.getElementById("profilePreview");
