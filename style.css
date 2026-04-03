@@ -402,3 +402,25 @@ body::before {
   text-align: center;
   padding: 10px;
 }
+
+#profilePreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#uploadText {
+  position: absolute;
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .profile-circle {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto; /* center it */
+  }
+}
