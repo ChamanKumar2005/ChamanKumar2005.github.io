@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaman | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Animated background orbs -->
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="bg-orb orb3"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">ck<span class="blink">_</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certs</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-dot-status"><span></span>Available for work</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-greeting">
+          <span class="greeting-pill">Hi There!</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="name-line">Chaman</span>
+          <span class="name-line accent-glow">Kumar</span>
+        </h1>
+        <div class="hero-typewriter">
+          <span id="typeTarget"></span><span class="type-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Computer Science student focused on <span class="hl">DSA & Competitive Programming</span>, solving complex problems with optimized and scalable approaches.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">
+            <span>View Projects</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <!-- <a class="btn btn-ghost" href="#contact">Get in Touch</a> -->
+        </div>
+        <a class="btn btn-resume" href="resume (1).pdf" download>
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v16M7 17l5 5 5-5M3 21h18"/></svg>
+          <span>Download Resume</span>
+        </a>
+        <div class="hero-stats">
+          <div class="stat-pill">
+            <span class="sp-num">500+</span>
+            <span class="sp-label">DSA Problems</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <span class="sp-num">9.25</span>
+            <span class="sp-label">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <span class="sp-num">2+</span>
+            <span class="sp-label">Project</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-col">
+        <div class="photo-frame">
+          <div class="photo-glow"></div>
+          <div class="photo-ring ring1"></div>
+          <div class="photo-ring ring2"></div>
+          <img class="hero-photo" src="pfp_pic.png" alt="Chaman Kumar" />
+          <div class="photo-badge badge-ai">AI & ML</div>
+          <div class="photo-badge badge-gfg">DSA Problems 500+</div>
+        </div>
+        <!-- Floating skill chips -->
+        <div class="float-chip chip-java">C++</div>
+        <div class="float-chip chip-py">Python</div>
+        <div class="float-chip chip-ml">Web Dev</div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-tag"># ABOUT</div>
+  <div class="about-container">
+
+    <!-- LEFT CARD (PROFILE) -->
+    <!-- LEFT CARD -->
+  <div class="about-left-card proj-card">
+
+  <!-- CLICKABLE PROFILE -->
+  <div class="profile-circle" onclick="document.getElementById('photoInput').click()">
+    <img id="profilePreview" src="" alt="" />
+    <span id="uploadText">Click to upload</span>
+  </div>
+
+  <!-- HIDDEN FILE INPUT -->
+  <input type="file" id="photoInput" accept="image/*" hidden />
+
+  <h3 class="about-name">Chaman Kumar</h3>
+  <p class="about-role">DSA • Competitive Programmer</p>
+
+  <div class="about-stats">
+    <div class="stat-box">
+      <h4>500+</h4>
+      <span>Problems</span>
+    </div>
+    <div class="stat-box">
+      <h4>3+</h4>
+      <span>Langs</span>
+    </div>
+    <div class="stat-box">
+      <h4>2028</h4>
+      <span>Grad</span>
+    </div>
+  </div>
+</div>
+
+    <!-- RIGHT CARD (ABOUT TEXT) -->
+    <!-- RIGHT CARD -->
+<div class="about-right-card proj-card">
+
+      <p>👋 Hi there! I'm a <span class="hl">B.Tech CSE</span> student specializing in <span class="hl">Artificial Intelligence & Machine Learning.</span> I enjoy solving complex problems efficiently and constantly strive to improve my analytical thinking and coding skills through consistent practice and real-world applications.</p>
+
+<p>💻 I am proficient in <span class="hl">Java, C++, and Python</span>, and have solved over <span class="hl">500+ problems</span> across various coding platforms. This journey has helped me build a strong foundation in algorithms, time-space optimization, and structured problem-solving approaches.</p>
+
+<p>🚀 I actively participate in competitive programming, where I continuously work on improving my speed, accuracy, and ability to perform under time constraints. I enjoy breaking down complex problems into simpler components and optimizing them for better performance.</p>
+
+<p>📚 Beyond coding, I am always exploring new technologies and concepts to expand my skill set. I believe in continuous learning and staying updated with industry trends to grow as a developer.</p>
+
+<p>🎯 My goal is to become a high-impact software engineer, capable of designing scalable systems and contributing to meaningful, real-world solutions that create value.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-tag"># SKILLS</div>
+    <h2 class="sec-title">What I <em>Know</em></h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="sg-header">
+          <span class="sg-dot" style="background:#a78bfa"></span>
+          <h3>Languages</h3>
+        </div>
+        <div class="tags">
+          <span class="tag">Java</span><span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="sg-header">
+          <span class="sg-dot" style="background:#818cf8"></span>
+          <h3>Web</h3>
+        </div>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="sg-header">
+          <span class="sg-dot" style="background:#c084fc"></span>
+          <h3>ML / Data</h3>
+        </div>
+        <div class="tags">
+          <span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Streamlit</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="sg-header">
+          <span class="sg-dot" style="background:#e879f9"></span>
+          <h3>Tools</h3>
+        </div>
+        <div class="tags">
+          <span class="tag">VS Code</span><span class="tag">MySQL</span><span class="tag">Git</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="sg-header">
+          <span class="sg-dot" style="background:#7dd3fc"></span>
+          <h3>Core Areas</h3>
+        </div>
+        <div class="tags">
+          <span class="tag">DSA</span><span class="tag">OOP</span><span class="tag">DBMS</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="sg-header">
+          <span class="sg-dot" style="background:#6ee7b7"></span>
+          <h3>Soft Skills</h3>
+        </div>
+        <div class="tags">
+          <span class="tag soft">Team Collaboration</span><span class="tag soft">Communication</span><span class="tag soft">Problem Solving</span><span class="tag soft">Leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-tag"># PROJECTS</div>
+    <h2 class="sec-title">Things I've <em>Built</em></h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="proj-card reveal">
+        <div class="proj-glow"></div>
+        <div class="proj-top">
+          <div class="proj-meta">
+            <span class="proj-year">July 2025</span>
+            <span class="proj-type">Desktop App</span>
+          </div>
+          <div class="proj-icon">💬</div>
+        </div>
+        <h3>Inquiro - Q & A Platform</h3>
+        <p>This project is basically like a mini question-and-answer app (similar to Stack Overflow or Quora), but made for desktop use.</p>
+        <div class="proj-tech">
+          <span>Java</span><span>Swing</span><span>JDBC</span><span>MVC</span>
+        </div>
+        <ul class="proj-points">
+          <li>Designed an interactive GUI using Java Swing with custom UI components for improved user experience.</li>
+          <li>Implemented MVC architecture and DAO classes.</li>
+          <li>integrating MySQL via JDBC for efficient data storage and retrieval.</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://github.com/DeepanshuKarki-coder/Inquiro-Gui" target="_blank">View on GitHub</a>
+      </div>
+
+      <!-- Project 2
+      <div class="proj-card reveal">
+        <div class="proj-glow" style="background:radial-gradient(circle at 50% 0%, rgba(129,140,248,0.18), transparent 70%)"></div>
+        <div class="proj-top">
+          <div class="proj-meta">
+            <span class="proj-year">May 2025</span>
+            <span class="proj-type">Console App</span>
+          </div>
+          <div class="proj-icon">🎓</div>
+        </div>
+        <h3>Student Management System</h3>
+        <p>A console-based Java application with full CRUD operations to manage student records and marks — built with clean OOP and layered architecture using Collections Framework.</p>
+        <div class="proj-tech">
+          <span>Java</span><span>OOP</span><span>Collections</span>
+        </div>
+        <ul class="proj-points">
+          <li>Full CRUD — Create, Read, Update, Delete</li>
+          <li>Modular layered OOP design</li>
+          <li>Efficient data handling via Java Collections</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://github.com/Rishu2913/Student-Management-System" target="_blank">View on GitHub</a>
+      </div> -->
+
+      <!-- Project 3 — NEW -->
+      <div class="proj-card reveal proj-featured">
+        <div class="proj-glow" style="background:radial-gradient(circle at 50% 0%, rgba(192,132,252,0.22), transparent 70%)"></div>
+        <div class="proj-badge-new">NEW</div>
+        <div class="proj-top">
+          <div class="proj-meta">
+            <span class="proj-year">Jan 2026</span>
+            <span class="proj-type">Desktop App</span>
+          </div>
+          <div class="proj-icon">📚</div>
+        </div>
+        <h3>Smart Library Management System</h3>
+        <p>Developed a desktop-based library management system to manage books, student records, and borrowing activities.</p>
+        <div class="proj-tech">
+          <span>Java</span><span>Swing</span><span>JDBC</span><span>MySQL</span>
+        </div>
+        <ul class="proj-points">
+          <li>Built an interactive GUI using Java Swing.</li>
+          <li>Integrated MySQL database using JDBC for persistent data storage.</li>
+          <li>Designed modules for authentication, book management, and user management with input validation.</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://github.com/ChamanKumar2005/Smart-Library-Management-System" target="_blank">View on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section section-alt" id="certs">
+    <div class="section-tag"># Certifications</div>
+    <h2 class="sec-title">My <em>Credentials</em></h2>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon">☕</div>
+        <h4>Java</h4>
+        <p>HackerRank</p>
+        <span class="cert-date">Oct 2025</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🗄️</div>
+        <h4>Database Programming with SQL</h4>
+        <p>Oracle Academy Certification</p>
+        <span class="cert-date">Nov 2025</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">⚙️</div>
+        <h4>DSA Using - C</h4>
+        <p>Guvi HCL Certification</p>
+        <span class="cert-date">Dec 2025</span>
+      </div>
+    </div>
+    <div class="achievement reveal">
+      <span class="ach-emoji">🏆</span>
+      <p>Solved <strong>500+</strong> coding problems on <strong>LeetCode</strong> &amp; <strong>CodeChef</strong></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-tag"> # CONTACT</div>
+    <h2 class="sec-title">Let's <em>Connect</em></h2>
+    <p class="contact-sub">Open to opportunities, collaborations, and engaging conversations in the tech space.</p>
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="mailto:kchaman441@gmail.com">
+        <span class="cc-icon">✉️</span>
+        <span class="cc-label">Email</span>
+        <span class="cc-val">kchaman441@gmail.com</span>
+      </a>
+      <a class="contact-card reveal" href="tel:+916201608694">
+        <span class="cc-icon">📞</span>
+        <span class="cc-label">Phone</span>
+        <span class="cc-val">+91 6201608694</span>
+      </a>
+      <a class="contact-card reveal" href="https://www.linkedin.com/in/cham-x20s/" target="_blank">
+        <span class="cc-icon">💼</span>
+        <span class="cc-label">LinkedIn</span>
+        <span class="cc-val">Chaman Kumar</span>
+      </a>
+      <a class="contact-card reveal" href="https://github.com/ChamanKumar2005" target="_blank">
+        <span class="cc-icon">🐙</span>
+        <span class="cc-label">GitHub</span>
+        <span class="cc-val">ChamanKumar2005</span>
+      </a>
+      <a class="contact-card reveal" href="https://codolio.com/profile/Mid_Knight" target="_blank">
+        <span class="cc-icon">⌨️</span>
+        <span class="cc-label">Codolio</span>
+        <span class="cc-val">Chaman Kumar</span>
+      </a>
+    </div>
+  </section>
+    
+
+<footer class="mini-footer">
+  <div class="mini-footer-inner">
+    <span>© Chaman Kumar | Built with ❤️</span>
+    <!-- <div class="mini-links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="mailto:kchaman441@gmail.com">Email</a>
+    </div> -->
+  </div>
+  
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
